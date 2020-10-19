@@ -1,27 +1,9 @@
-body{
-    background-color: #D5F5E3;
-}
-main{
- 
-   border:  10px solid  #fbff2c;
-   margin-left: 60px;
-   margin-right: 60px;
-   margin-top: 30px;
-   float: left;
-    
-}
+
 
 .photo-template{
     display: none;
 }
-div{
-  
-    border: 10px solid #006E6D; 
-  float: left;
-    padding-left: 40px;
-    visibility:visible;
-    
-}
+
 img {   width: 300px;  
       height: 300px;    
       
@@ -48,6 +30,8 @@ img {   width: 300px;
         margin-left: 600px;
         background-color: #006E6D;
         color: wheat;
+        padding: 20px;
+        
     }
 
     footer{
