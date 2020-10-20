@@ -5,6 +5,19 @@
     display: none;
 }
 
+section{
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+div{
+ 
+    border: 10px solid #006E6D; 
+   
+      padding-left: 40px;
+      visibility:visible;
+      
+  }
 img {   width: 300px;  
       height: 300px;    
       
@@ -14,8 +27,10 @@ img {   width: 300px;
      border-radius: 5px;  
     } 
     h2 ,h3 {
+        width: 300px;
         text-align: center;
         font-family: 'Sansita Swashed', cursive;
+        
     }
     p{
       
@@ -38,7 +53,19 @@ img {   width: 300px;
     footer{
         text-align: center;
     }
- 
-
+ #pageOne , #pageTow {
+     background-color: skyblue;
+     margin: 10px;
+     
+     border: skyblue;
+     padding: 10px;
+ }
+#hornse ,#title{
+    background-color: rgb(154, 195, 243);
+     margin: 10px;
+     
+     border: rgb(97, 163, 238);
+     padding: 10px;
+}
    
    

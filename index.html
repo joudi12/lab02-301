@@ -1,41 +1,49 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>The Gallery of Horns</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="modules.css">
-   
-   <link rel="stylesheet" href="layout.css">
-  </head>
-  <body>
-    <header>
-      <h1>The Gallery of Horns</h1>
-      <select  id="selects">
-        <option id="items"  value="default">show all</option>
-      </select>
-    </header>
-    <main>
-      <section >
-          <div class="photo-template" >
-        <h2></h2>
-        <h3></h3>
-        <img src="">
-        <p></p>
-    </div>
-      </section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Gallery of Horns</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sansita+Swashed:wght@300&display=swap"
+     rel="stylesheet">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="modules.css">
+  <link rel="stylesheet" href="layout.css">
+</head>
 
-      
-
-    </main>
-    
-
-
-  </body>
+<body>
+  <header>
+    <h1>The Gallery of Horns</h1>
   
+    <select id="selects">
+      <option id="items" value="default">show all</option>
+    </select>
+    <button id="pageOne">
+      page one
+    </button>
+    <button id="pageTow">
+      page two
+    </button>
+    <button id="hornse"> sort horns </button>
+    <button id="title"> sort title </button>
+  </header>
+
+  <main>
+    <section id="section" >
+      <template id="mustache-template" type="text/x-tmpl-mustache">
+        <div id="{{keyword}}">
+          <h2> {{title}}</h2>
+          <h3>{{keyword}}</h3>
+          <img src="{{image_url}}" alt="">
+          <p>{{description}}</p>
+          <p>{{horns}}</p>
+        </div>
+      </template>
+    </section>
+  </main>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/mustache@latest"></script>
   <script src="app.js"></script>
+</body>
 </html>
