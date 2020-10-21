@@ -83,7 +83,8 @@ Image.prototype.drowbdon = function () {
 
         $('div').hide();
 
-        $('#' + $('select').val()).show();
+        $('.' + $('select').val()).show();
+        // $('.' +  $('select').val() ).show();
     })
 };
 
